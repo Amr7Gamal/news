@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news/homeScreen.dart';
+import 'package:news/base/myTheme.dart';
+import 'package:news/ui/home/homeScreen.dart';
+import 'package:news/ui/home/news/news_fragment.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,8 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'News',
-      routes: {HomeScreen.nameKay : (_)=> HomeScreen()} ,
-      initialRoute: HomeScreen.nameKay ,
+      theme: MyTheme.lightTheme,
+      routes: {HomeScreeen.nameKay : (_)=> HomeScreeen()} ,
+      initialRoute: HomeScreeen.nameKay ,
       debugShowCheckedModeBanner: false,
     );
   }
